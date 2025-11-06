@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhusudan — Space Station Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- 3D Background -->
+  <canvas id="bg"></canvas>
+
+  <!-- ABOUT / INTRO -->
+  <section id="intro" class="section">
+    <div class="section-inner">
+      <h1>Madhusudan Pathani</h1>
+      <p class="lead">Building intelligent systems that adapt, learn, and scale.</p>
+      <p>I’m a B.E. student in Artificial Intelligence and Machine Learning from Bengaluru who loves building practical, well-engineered solutions. I enjoy working across the stack from backend systems to mobile and web apps, and I focus on learning by creating real, usable projects.</p>
+    </div>
+  </section>
+ 
+   <!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-inner">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+      <article id="nexi" class="project-card">
+        <header class="project-header">
+          <h3 class="project-title">Nexi — Conversational AI for Dementia Care</h3>
+          <time class="project-year" datetime="2024">2024</time>
+        </header>
+
+        <p class="project-summary">Designed a privacy-first conversational assistant to provide medication reminders and contextual task support for elderly users.</p>
+
+        <ul class="project-bullets">
+          <li><strong>Problem:</strong> Many elderly people lose track of medication and daily tasks because traditional reminder systems don’t adapt and often isolate them.</li>
+          <li><strong>What I did:</strong> Built "Nexi" — a voice-first assistant with a lightweight on-device NLP engine (intent + entity detection) and an accessibility-focused UI with voice feedback.</li>
+          <li><strong>Impact / Learning:</strong> Pilot tests with 10+ users increased adherence ~30%. Learned to simplify NLP for edge devices and design trustworthy voice UX.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">NLP</span><span class="tag">Voice UX</span><span class="tag">Edge</span>
+        </div>
+
+        <div class="project-actions">
+          <a target="_blank" href="https://github.com/keikurono7/Nexi" class="btn" aria-label="Nexi demo or repo">GitHub / Demo</a>
+        </div>
+      </article>
+
+      <article id="magnifeye" class="project-card">
+        <header class="project-header">
+          <h3 class="project-title">MagnifEye — Real-Time Face-Recognition Android App</h3>
+          <time class="project-year" datetime="2025">2025</time>
+        </header>
+
+        <p class="project-summary">Android app using on-device face recognition to speed student verification and preserve privacy.</p>
+
+        <ul class="project-bullets">
+          <li><strong>Problem:</strong> Manual verification is slow, error-prone and doesn’t scale in educational settings.</li>
+          <li><strong>What I did:</strong> Built a real-time on-device pipeline and secure backend to log results and present faculty-friendly UIs (slidable card view).</li>
+          <li><strong>Impact / Learning:</strong> Pilot reduced verification time 60–70%. Strengthened skills in mobile ML optimisation, UX, and secure data flow.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Computer Vision</span><span class="tag">Mobile</span><span class="tag">On‑Device ML</span>
+        </div>
+      </article>
+
+      <article id="carechain" class="project-card">
+        <header class="project-header">
+          <h3 class="project-title">CareChain — Healthcare Blockchain Prototype</h3>
+          <time class="project-year" datetime="2025">2025</time>
+        </header>
+
+        <p class="project-summary">Prototype to secure patient records using blockchain and ML for anomaly detection and permission automation.</p>
+
+        <ul class="project-bullets">
+          <li><strong>What I did:</strong> Built a prototype ledger for immutability plus ML modules to detect anomalies and automate access control workflows.</li>
+          <li><strong>Impact / Learning:</strong> Demonstrated secure audit trails and automated alerts for suspicious record changes; gained experience integrating crypto-ledger concepts with ML pipelines.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Blockchain</span><span class="tag">Healthcare</span><span class="tag">ML</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/keikurono7/CareChain" target="_blank" class="btn" aria-label="CareChain repo or notes">Project notes</a>
+        </div>
+      </article>
+
+      <article id="freelance" class="project-card">
+        <header class="project-header">
+          <h3 class="project-title">Clayarts & Freelance Full-Stack Work</h3>
+          <time class="project-year" datetime="2025">2025</time>
+        </header>
+
+        <p class="project-summary">End-to-end e‑commerce and web apps: backend (PHP/MySQL), payments (Razorpay), analytics and deployment.</p>
+
+        <ul class="project-bullets">
+          <li><strong>What I did:</strong> Implemented secure backend features, order rules, payment integration and monitoring for production clients.</li>
+          <li><strong>Impact / Learning:</strong> Delivered production-ready features and improved secure payment flows and observability for small businesses.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Full‑Stack</span><span class="tag">Payments</span><span class="tag">Ops</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://clayarts.co/" target="_blank" class="btn" aria-label="production website">Visit site</a>
+        </div>
+      </article>
+
+      <article id="steve" class="project-card">
+        <header class="project-header">
+          <h3 class="project-title">Steve — Keyword-Based AI Assistant</h3>
+          <time class="project-year" datetime="2025">2025</time>
+        </header>
+
+        <p class="project-summary">
+          Lightweight local assistant that continuously listens for keywords and enables hands-free note capture.
+        </p>
+
+        <ul class="project-bullets">
+          <li><strong>What I did:</strong> Built continuous audio ingestion, keyword spotting and a speech-to-text pipeline for offline note-taking and commands.</li>
+          <li><strong>Impact / Learning:</strong> Achieved low-latency detection on-device; learned trade-offs in model size vs latency for always-on assistants.</li>
+          <li><strong>Extension:</strong> Published a reusable <em>Python module</em> for this assistant, available on <a href="https://pypi.org/project/keywordx/" target="_blank">PyPI</a> and <a href="https://github.com/keikurono7/keywordx" target="_blank">GitHub</a>.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Voice</span>
+          <span class="tag">Edge</span>
+          <span class="tag">STT</span>
+          <span class="tag">Python Package</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/keikurono7/keywordx" class="btn" aria-label="Steve GitHub repository">GitHub</a>
+          <a href="https://pypi.org/project/keywordx/" class="btn" aria-label="Steve PyPI package">PyPI</a>
+        </div>
+      </article>
+
+
+    </div> <!-- /.projects-grid -->
+  </div> <!-- /.section-inner -->
+</section>
+ 
+ 
+ <!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-inner">
+    <h2>Skills</h2>
+
+    <div class="skills-section">
+
+      <div class="skill-group">
+        <h3>AI & Learning Systems</h3>
+        <div class="skill-chips">
+          <div class="skill-chip expert"><span>Python</span></div>
+          <div class="skill-chip solid"><span>TensorFlow</span></div>
+          <div class="skill-chip solid"><span>PyTorch</span></div>
+          <div class="skill-chip solid"><span>Scikit-Learn</span></div>
+          <div class="skill-chip solid"><span>spaCy</span></div>
+          <div class="skill-chip solid"><span>Hugging Face</span></div>
+          <div class="skill-chip basic"><span>NLTK</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Full-Stack & Deployment</h3>
+        <div class="skill-chips">
+          <div class="skill-chip full"><span>JavaScript</span></div>
+          <div class="skill-chip solid"><span>Flask</span></div>
+          <div class="skill-chip full"><span>PHP</span></div>
+          <div class="skill-chip full"><span>React Native</span></div>
+          <div class="skill-chip full"><span>MySQL</span></div>
+          <div class="skill-chip full"><span>Firebase</span></div>
+          <div class="skill-chip full"><span>Google Cloud Run</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Applied & Research Areas</h3>
+        <div class="skill-chips">
+          <div class="skill-chip full"><span>Computer Vision</span></div>
+          <div class="skill-chip full"><span>Conversational AI</span></div>
+          <div class="skill-chip solid"><span>Edge ML</span></div>
+          <div class="skill-chip solid"><span>Blockchain Integration</span></div>
+          <div class="skill-chip basic"><span>Data Pipelines</span></div>
+        </div>
+      </div>
+
+
+    </div> <!-- /.skills-section -->
+  </div> <!-- /.section-inner -->
+</section>
+ 
+ 
+ 
+   <!-- CONTACT / CTA -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="cta-card" role="region" aria-labelledby="cta-title">
+        <div class="cta-copy">
+          <h2 id="cta-title">Let’s build something meaningful</h2>
+          <p class="lead">I’m open to AI/ML engineering roles, full‑stack positions, and research internships. I focus on practical, production-ready systems — voice, vision, on‑device ML and secure backends.</p>
+          <p class="muted">Prefer email for initial contact — include role, timeline and a short brief of the problem you’re solving.</p>
+        </div>
+
+        <div class="cta-actions" aria-hidden="false">
+          <a class="cta-btn" href="mailto:dmpathani@gmail.com?subject=Opportunity%20Inquiry" aria-label="Email Madhusudan">Email →</a>
+
+          <div class="cta-links">
+            <a class="cta-secondary" href="https://github.com/madhusudan-" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+            <a class="cta-secondary" href="https://linkedin.com/in/madhusudan-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dots Navigation (links can remain as anchors) -->
+  <nav class="dots">
+    <a href="#intro" class="dot active" aria-label="Intro"></a>
+    <a href="#projects" class="dot" aria-label="Projects"></a>
+    <a href="#skills" class="dot" aria-label="Skills"></a>
+    <a href="#contact" class="dot" aria-label="Contact"></a>
+  </nav>
+
+  <!-- external JS module (loads model and drives rotation on scroll) -->
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
