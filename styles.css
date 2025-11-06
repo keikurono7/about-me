@@ -281,19 +281,19 @@ p {
 
 /* mastery levels — cohesive cool tones with strong contrast */
 .skill-chip.basic::before {
-  width: 40%;
+  width: 25%;
   opacity: 0.4;
   background: linear-gradient(90deg, #003cff, #009dff); /* deep blue → sky blue */
 }
 
 .skill-chip.solid::before {
-  width: 60%;
+  width: 50%;
   opacity: 0.55;
   background: linear-gradient(90deg, #007bff, #00e0ff); /* bright blue → aqua */
 }
 
 .skill-chip.full::before {
-  width: 80%;
+  width: 75%;
   opacity: 0.7;
   background: linear-gradient(90deg, #00e5ff, #66ffff); /* cyan → light aqua */
 }
@@ -473,4 +473,5 @@ p {
 
 /* ensure CTA sits above canvas and inner card clipping */
 #contact { z-index: 30; }
+
 .section-inner { overflow: visible; }
